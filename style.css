@@ -5,17 +5,40 @@
     font-family: 'popins', sans-serif;
 }
 
+body{
+    background: #dbd3db;
+}
+
 section
 {
+    background: url(image/me.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
     position: relative;
     width: 100%;
     min-height: 100vh;
-    padding: 100px;
+    padding: 75px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #170224cb;
-    transition: 0.5s;
+    transition: 0.5s;    
+    width: 100%;
+    height: 75%;
+}
+
+section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(image/me.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: right;
+    mix-blend-mode: screen;
 }
 
 header
@@ -48,21 +71,20 @@ header ul li{
 
 header ul li a 
 {
-    background: #da77d5a9;
-    border-radius: 50px;
-    padding: 8px 20px;
+    background: #295c5cb4;
+    border-radius: 20px;
+    padding: 8px 15px;
     display: inline-block;
     color: #fff;
     font-weight: 600;
-    margin-left: 40px;
+    margin-left: 10px;
     text-decoration: none;
 }
 
-header ul li a :hover 
+header ul li a:hover 
 {
-    background: #e681df81;
     border-radius: 60px;
-    color: #f08e8eb4;
+    background: #33664cb4;
 }
 
 .content
@@ -81,7 +103,7 @@ header ul li a :hover
 
 .content .textbox h2
 {
-    color: rgba(127, 255, 212, 0.61);
+    color: rgba(71, 99, 76, 0.815);
     font-size: 4em;
     line-height: 1.5em;
     font-weight: 900;
@@ -92,15 +114,15 @@ header ul li a :hover
 }
 
 .content .textbox p{
-    color: aliceblue;
+    color: rgb(25, 34, 43);
 }
 
 .content .textbox a{
     display: inline-block;
     margin-top: 20px;
     padding: 8px 20px;
-    background: white;
-    color: #111;
+    background: #559e25c0;
+    color: white;
     border-radius: 40px;
     font-weight: 900;
     letter-spacing: 1px;
@@ -126,7 +148,7 @@ header ul li a :hover
 }
 
 .thumb li img{
-    max-width: 40px;
+    max-width: 100px;
 }
 
 
