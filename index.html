@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PortFolio</title>
+</head>
+
+<body>
+    <section class="primarynav">
+        <header>
+            <a href="http://" target="_blank" rel="noopener noreferrer"><img src="" alt="" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>I'm RAVELOALISON <br><span>Mandresy Christensen</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum minus ratione nam! Ipsa esse,
+                    eius dicta voluptatem similique perferendis ab. Quos at necessitatibus nesciunt aspernatur hic
+                    error, natus enim.
+                </p>
+                <a href="#">View all Projects</a>
+            </div>
+            <div class="imgBox">
+                <img src="" alt="" class="">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="image/splash.jpg" onclick="imgSlider" alt=""></li>
+            <li><img src="image/pexels-dan-cristian-pădureț-1193743.jpg" onclick="imgSlider" alt=""></li>
+            <li><img src="image/splash.jpg" onclick="imgSlider" alt=""></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+            <li><a href="#"><img src="" alt=""></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgColor(color){
+            const sec = document.querySelector('.primarynav');
+            sec.style.background = color;
+        }
+    </script>
+</body>
+
+</html>
